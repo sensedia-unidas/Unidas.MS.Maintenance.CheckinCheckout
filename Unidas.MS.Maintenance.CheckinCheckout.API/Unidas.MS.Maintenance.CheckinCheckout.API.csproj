@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Unidas.MS.Maintenance.CheckinCheckout.Application\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj" />
+    <ProjectReference Include="..\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+  	<WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
