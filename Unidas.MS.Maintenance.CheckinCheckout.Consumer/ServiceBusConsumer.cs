@@ -37,7 +37,6 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Consumer
                 await _processor.StartProcessingAsync();
 
                 _logger.LogInformation("Maintenance Checkin/Checkout - Processing messages");
-                Console.ReadKey();
             }
             finally
             {
