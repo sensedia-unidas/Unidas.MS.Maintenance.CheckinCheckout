@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Unidas.MS.Maintenance.CheckinCheckout.Consumer": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

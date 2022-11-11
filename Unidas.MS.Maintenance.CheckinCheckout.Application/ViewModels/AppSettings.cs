@@ -17,7 +17,11 @@
 
     public class ServiceBusSettings
     {
-        public string ConnectionString { get; set; }
+        public string PrimaryConnectionString { get; set; }
+        public string SecondConnectionString { get; set; }
         public string QueueName { get; set; }
+        public string PrimaryKey { get; set; }
+        public string SecondKey { get; set; }
+        public string ArmId { get; set; }
     }
  }

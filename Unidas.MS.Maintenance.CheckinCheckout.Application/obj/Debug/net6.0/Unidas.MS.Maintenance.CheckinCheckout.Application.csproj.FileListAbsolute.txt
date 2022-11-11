@@ -9,3 +9,4 @@ C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.Checkin
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Application\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Application.dll
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Application\obj\Debug\net6.0\ref\Unidas.MS.Maintenance.CheckinCheckout.Application.dll
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Application\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Application.pdb
+C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Application\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj.AssemblyReference.cache

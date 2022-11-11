@@ -1,4 +1,6 @@
-﻿namespace Unidas.MS.Maintenance.CheckinCheckout.Application.ViewModels.Requests
+﻿using Newtonsoft.Json.Linq;
+
+namespace Unidas.MS.Maintenance.CheckinCheckout.Application.ViewModels.Requests
 {
     public class ItemCheckinCheckoutRequestViewModel
     {
