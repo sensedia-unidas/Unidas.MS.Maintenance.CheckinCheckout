@@ -20,7 +20,6 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC
             services.AddScoped<ICheckinCheckoutService, CheckinCheckoutService>();
             services.AddScoped<ISendToAxUseCase, SendToAxUseCase>();
 
-
             //VALIDATOR
             services.AddScoped<IMinimalValidator, MinimalValidator>();
 

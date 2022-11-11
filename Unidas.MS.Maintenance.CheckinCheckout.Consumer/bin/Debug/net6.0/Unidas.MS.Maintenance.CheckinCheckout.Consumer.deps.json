@@ -17,6 +17,7 @@
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Hosting": "7.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "7.0.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
           "Unidas.MS.Maintenance.CheckinCheckout.Application": "1.0.0",
           "Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC": "1.0.0"
         },
@@ -710,6 +711,7 @@
       },
       "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.NETCore.Targets/1.0.1": {},
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.14.0": {},
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "5.0.0",
@@ -1581,6 +1583,13 @@
       "sha512": "sha512-rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
       "path": "microsoft.netcore.targets/1.0.1",
       "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yORzATlNmCp4kEwkxznLZ3maTaUJc5yTcu3aPufY8Tq4141/bRRWsa91u8I24MR3BTCCJlZO98xuQWB4arlKCw==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.14.0",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
     },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",

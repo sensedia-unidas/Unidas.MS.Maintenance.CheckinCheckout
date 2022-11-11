@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Unidas.MS.Maintenance.CheckinCheckout.Worker-C68BDB4A-8279-4E54-BEBB-1909BF945006</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.21.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj" />
+  </ItemGroup>
+</Project>

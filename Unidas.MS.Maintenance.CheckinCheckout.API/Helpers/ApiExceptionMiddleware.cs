@@ -33,6 +33,7 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.API.Helpers
             if (exception is ServiceException)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                message = exception.Message;
                 logger.LogInformation(exception.Message, exception);
             }
             else if (exception is ActionNotSupportedException)
