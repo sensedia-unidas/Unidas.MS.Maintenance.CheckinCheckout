@@ -8,18 +8,18 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Unidas.MS.Maintenance.CheckinCheckout.Consumer/Unidas.MS.Maintenance.CheckinCheckout.Consumer.csproj", "Unidas.MS.Maintenance.CheckinCheckout.Consumer/"]
-COPY ["Unidas.MS.Maintenance.CheckinCheckout.Application/Unidas.MS.Maintenance.CheckinCheckout.Application.csproj", "Unidas.MS.Maintenance.CheckinCheckout.Application/"]
+COPY ["Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker/Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj", "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker/"]
 COPY ["Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC/Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj", "Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC/"]
-RUN dotnet restore "Unidas.MS.Maintenance.CheckinCheckout.Consumer/Unidas.MS.Maintenance.CheckinCheckout.Consumer.csproj"
+COPY ["Unidas.MS.Maintenance.CheckinCheckout.Application/Unidas.MS.Maintenance.CheckinCheckout.Application.csproj", "Unidas.MS.Maintenance.CheckinCheckout.Application/"]
+RUN dotnet restore "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker/Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj"
 COPY . .
-WORKDIR "/src/Unidas.MS.Maintenance.CheckinCheckout.Consumer"
-RUN dotnet build "Unidas.MS.Maintenance.CheckinCheckout.Consumer.csproj" -c Release -o /app/build
+WORKDIR "/src/Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker"
+RUN dotnet build "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Unidas.MS.Maintenance.CheckinCheckout.Consumer.csproj" -c Release -o /app/publish
+RUN dotnet publish "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Unidas.MS.Maintenance.CheckinCheckout.Consumer.dll"]
+ENTRYPOINT ["dotnet", "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.dll"]

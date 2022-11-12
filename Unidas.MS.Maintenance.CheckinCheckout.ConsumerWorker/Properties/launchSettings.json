@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

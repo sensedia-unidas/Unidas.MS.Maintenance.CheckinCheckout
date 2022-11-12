@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cph9sW8DEVvsLTOJUQk2sXZXDEwLXOMTm0HpB7g92pfXZ4BmrN8h1E6LPCWriuK4gg6M9TCEpQj1WohEg8hZYQ==",
+  "dgSpecHash": "35tRvFoL3A46aOqnLpWj4TdOq7emNCHLkZmlf0H03lX1/E2ZFZx3+Nw4vnkK2a2byW2eAn3OdKnckrd7/nyHTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\SergioBonani\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.2\\microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.10\\microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
@@ -19,6 +20,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.private.servicemodel\\4.10.0\\system.private.servicemodel.4.10.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
+    "C:\\Users\\SergioBonani\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.security.cryptography.pkcs\\5.0.0\\system.security.cryptography.pkcs.5.0.0.nupkg.sha512",

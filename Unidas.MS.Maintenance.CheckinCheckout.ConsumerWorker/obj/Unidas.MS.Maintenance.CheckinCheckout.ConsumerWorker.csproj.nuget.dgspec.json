@@ -1,0 +1,249 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Application\\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Application\\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj",
+        "projectName": "Unidas.MS.Maintenance.CheckinCheckout.Application",
+        "projectPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Application\\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj",
+        "packagesPath": "C:\\Users\\SergioBonani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SergioBonani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj",
+        "projectName": "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker",
+        "projectPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj",
+        "packagesPath": "C:\\Users\\SergioBonani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SergioBonani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.11.1, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "Microsoft.Extensions.Azure": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj",
+        "projectName": "Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC",
+        "projectPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\SergioBonani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SergioBonani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Application\\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj": {
+                "projectPath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Application\\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
