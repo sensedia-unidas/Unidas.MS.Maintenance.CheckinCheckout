@@ -18,17 +18,17 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services
         }
         public async Task<ValidationResult> Integrate(ItemCheckinCheckoutRequestViewModel request)
         {
-            _logger.LogInformation("CheckinCheckoutService - Iniciando integração", request);
+            _logger.LogInformation("Iniciando integração", request);
 
             var validation = new ValidationResult();
 
             if (!await _useCase.Execute(request))
             {
-                _logger.LogInformation("Service - Finalizando integração sem sucesso", request);
+                _logger.LogInformation("Integração não realizada", request);
                 validation.Errors.Add(new ValidationFailure(String.Empty, "Integração não realizada"));
             }
 
-            _logger.LogInformation("Service - Finalizando integração", request);
+            _logger.LogInformation("Finalizando integração", request);
 
             return validation;
         }

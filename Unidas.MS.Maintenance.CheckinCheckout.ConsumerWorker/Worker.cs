@@ -24,18 +24,6 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker
             _processor = _serviceBusClient.CreateProcessor(_appSettings.ServiceBusSettings.QueueName, new ServiceBusProcessorOptions());
         }
 
-        //public Worker(ILogger<Worker> logger) { _logger = logger; }
-
-        //protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-        //{
-        //    await ExecuteServiceBusConsumerAsync();
-        //    while (!stoppingToken.IsCancellationRequested)
-        //    {                
-        //        await Task.Delay(10000, stoppingToken);
-        //    }  
-            
-        //}
-
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             try
@@ -44,7 +32,7 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker
                 _processor.ProcessErrorAsync += ErrorHandler;
 
                 await _processor.StartProcessingAsync();
-                _logger.LogInformation("Maintenance Checkin/Checkout - Processing messages");
+                _logger.LogInformation("Processando menssagens");
 
                 while (!stoppingToken.IsCancellationRequested)
                 {
@@ -67,29 +55,19 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker
                 var body = args.Message.Body.ToString();
                 var request = JsonConvert.DeserializeObject<ItemCheckinCheckoutRequestViewModel>(body);
 
-                if (request != null)
+                if (request == null)
                 {
-                    await ProcessMessage(request, args.CancellationToken);
-                }
-                else
-                {
-                    _logger.LogError("Não foi possível deserializar a menssagem: {body}", body);
+                    _logger.LogError("Não foi possível deserializar a menssagem: {0}", body);
+                    return;
                 }
 
-                //_logger.LogInformation("Maintenance Checkin/Checkout - Iniciando processamento o item", request);
-                //var response = await _checkinCheckoutService.Integrate(request);
-
-                //if (!response.IsValid)
-                //{
-                //    _logger.LogInformation("Maintenance Checkin/Checkout - falha no processamento do item", request);
-                //}
-
-                //_logger.LogInformation("Maintenance Checkin/Checkout - Processamento realizado com sucesso", request);
-                await args.CompleteMessageAsync(args.Message);
+                if(await ProcessMessage(request, args.CancellationToken))
+                {
+                    await args.CompleteMessageAsync(args.Message);
+                }               
             }
             catch (Exception ex)
             {
-                _logger.LogError("Erro", ex);
                 throw;
             }
             
@@ -97,10 +75,10 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker
 
         Task ErrorHandler(ProcessErrorEventArgs args)
         {
-            _logger.LogError("Maintenance Checkin/Checkout - erro no processamento", args.Exception.ToString());
+            _logger.LogError("Erro no processamento: {0}", args.Exception.Message.ToString());
             return Task.CompletedTask;
         }
 
-        protected abstract Task ProcessMessage(ItemCheckinCheckoutRequestViewModel request, CancellationToken cancellationToken);
+        protected abstract Task<bool> ProcessMessage(ItemCheckinCheckoutRequestViewModel request, CancellationToken cancellationToken);
     }
 }

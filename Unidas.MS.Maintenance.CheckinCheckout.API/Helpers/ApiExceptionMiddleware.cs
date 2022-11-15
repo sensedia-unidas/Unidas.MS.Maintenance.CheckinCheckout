@@ -1,8 +1,10 @@
 ﻿using Unidas.MS.Maintenance.CheckinCheckout.Application.Services.Exceptions;
 using System.ServiceModel;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Unidas.MS.Maintenance.CheckinCheckout.API.Helpers
 {
+    [ExcludeFromCodeCoverage]
     public class ApiExceptionMiddleware
     {
         private readonly RequestDelegate next;

@@ -29,7 +29,7 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services.UseCases
         {
             try
             {
-                _logger.LogInformation("SendToAxUseCase - Iniciando envio para o AX", item);
+                _logger.LogInformation("Iniciando envio para o AX", item);
 
                 ServicePointManager.Expect100Continue = true;
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
@@ -46,14 +46,14 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services.UseCases
 
                 var result = await client.createWorkshopCheckAsync(null, axViewModelRequest).ConfigureAwait(false);
 
-                _logger.LogInformation("SendToAxUseCase - Finalizando envio para o AX", item);
-                _logger.LogInformation("SendToAxUseCase - resultado ", result);
+                _logger.LogInformation("Finalizando envio para o AX", item);
+                _logger.LogInformation("Resposta do AX: {0}", result.ToString());
 
                 return true;
             }
             catch (Exception ex)
             {
-                _logger.LogError("SendToAxUseCase - Erro ao tentar envio para o AX", ex);
+                _logger.LogError("Erro ao tentar envio para o AX - {0}", ex.Message.ToString());
                 throw;
             }
         }

@@ -1,35 +1,49 @@
 ﻿using FluentAssertions;
-using Unidas.MS.Maintenance.CheckinCheckout.Application.Interfaces.Services;
+using Microsoft.Extensions.Logging;
+using Moq;
+using Unidas.MS.Maintenance.CheckinCheckout.Application.Interfaces.Services.UseCases;
+using Unidas.MS.Maintenance.CheckinCheckout.Application.Services;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Tests.Data;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.ViewModels.Requests;
-using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Tests.Services
 {
     public class CheckinCheckoutServiceTest
     {
-        private Mock<ICheckinCheckoutService> MockService()
+        private Mock<ISendToAxUseCase> MockSendToAxUseCase(bool isExecuted)
         {
-            var mock = new Mock<ICheckinCheckoutService>();
-            //mock.Setup(x => x.Integrate(It.IsAny<ItemCheckinCheckoutRequestViewModel>())).ReturnsAsync(new FluentValidation.Results.ValidationResult());
+            var mock = new Mock<ISendToAxUseCase>();
+            mock.Setup(x => x.Execute(It.IsAny<ItemCheckinCheckoutRequestViewModel>())).ReturnsAsync(isExecuted);
 
             return mock;
         }
+
+        private Mock<ILogger<CheckinCheckoutService>> MockLogger()
+        {
+            return new Mock<ILogger<CheckinCheckoutService>>();
+        }
+
         [Fact]
         public async void ShouldIntegrateRequest()
         {
-            var service = MockService().Object;
+            var service = new CheckinCheckoutService(MockSendToAxUseCase(true).Object, MockLogger().Object);
 
             var result = await service.Integrate(ItemCheckinCheckoutDataTests.GetItemRequest());
 
             Assert.NotNull(result);
             result.IsValid.Should().BeTrue();
+        }
+
+        [Fact]
+        public async void ShouldntIntegrateRequest()
+        {
+            var service = new CheckinCheckoutService(MockSendToAxUseCase(false).Object, MockLogger().Object);
+
+            var result = await service.Integrate(ItemCheckinCheckoutDataTests.GetItemRequest());
+
+            Assert.NotNull(result);
+            result.IsValid.Should().BeFalse();
         }
     }
 }

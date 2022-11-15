@@ -3,13 +3,13 @@ global using Newtonsoft.Json;
 global using System;
 global using System.Linq;
 global using System.Net;
-using FluentValidation;
 using Unidas.MS.Maintenance.CheckinCheckout.API.Helpers;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Interfaces.Services;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.ViewModels;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.ViewModels.Requests;
 using Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC;
 using Microsoft.OpenApi.Models;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +34,6 @@ builder.Services.AddApplicationInsightsTelemetry(options =>
 {
     options.ConnectionString = builder.Configuration["ApplicationInsights:ConnectionString"];
 });
-
 
 builder.Services.AddMvc(options =>
 {
