@@ -9,7 +9,8 @@
       "Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Unidas.MS.Maintenance.CheckinCheckout.Application": "1.0.0"
+          "Unidas.MS.Maintenance.CheckinCheckout.Application": "1.0.0",
+          "Unidas.MS.Maintenance.CheckinCheckout.Infra": "1.0.0"
         },
         "runtime": {
           "Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.dll": {}
@@ -63,11 +64,11 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.922.41905"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       },
@@ -311,7 +312,7 @@
         "dependencies": {
           "AutoMapper": "12.0.0",
           "FluentValidation": "11.2.2",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "Newtonsoft.Json": "13.0.1",
           "System.ServiceModel.NetTcp": "4.10.0",
           "System.ServiceModel.Primitives": "4.10.0",
@@ -319,6 +320,19 @@
         },
         "runtime": {
           "Unidas.MS.Maintenance.CheckinCheckout.Application.dll": {}
+        }
+      },
+      "Unidas.MS.Maintenance.CheckinCheckout.Infra/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "System.ServiceModel.NetTcp": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0",
+          "System.ServiceModel.Security": "4.10.0",
+          "Unidas.MS.Maintenance.CheckinCheckout.Application": "1.0.0"
+        },
+        "runtime": {
+          "Unidas.MS.Maintenance.CheckinCheckout.Infra.dll": {}
         }
       }
     }
@@ -371,12 +385,12 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
+    "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pwXCZKaA7m5wgmCj49dW+H1RPSY7U62SKLTQYCcavf/k3Nyt/WnBgAjG4jMGnwy9rElfAZ2KvxvM5CJzJWG0hg==",
-      "path": "microsoft.extensions.logging.abstractions/6.0.2",
-      "hashPath": "microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512"
+      "sha512": "sha512-kmn78+LPVMOWeITUjIlfxUPDsI0R6G0RkeAMBmQxAJ7vBJn4q2dTva7pWi65ceN5vPGjJ9q/Uae2WKgvfktJAw==",
+      "path": "microsoft.extensions.logging.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.ObjectPool/5.0.10": {
       "type": "package",
@@ -519,6 +533,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "Unidas.MS.Maintenance.CheckinCheckout.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unidas.MS.Maintenance.CheckinCheckout.Infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

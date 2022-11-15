@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidas.MS.Maintenance.CheckinCheckout.API", "Unidas.MS.Maintenance.CheckinCheckout.API\Unidas.MS.Maintenance.CheckinCheckout.API.csproj", "{91D584EB-2CA5-4DDA-A670-F7CA8D7E9614}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidas.MS.Maintenance.CheckinCheckout.Domain", "Unidas.MS.Maintenance.CheckinCheckout.Domain\Unidas.MS.Maintenance.CheckinCheckout.Domain.csproj", "{FE14A1AC-8D85-426D-954F-9E928A93840A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidas.MS.Maintenance.CheckinCheckout.Application", "Unidas.MS.Maintenance.CheckinCheckout.Application\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj", "{A76F93CA-3D8C-410B-A056-4927633F4DE8}"
@@ -15,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidas.MS.Maintenance.Check
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidas.MS.Maintenance.CheckinCheckout.Application.Tests", "Unidas.MS.Maintenance.CheckinCheckout.Tests\Unidas.MS.Maintenance.CheckinCheckout.Application.Tests.csproj", "{62BBDB3C-E3B3-4E7A-95FA-4DCE3C71460B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker", "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj", "{F7975862-6ECB-42CE-9F3D-2D4DE195626E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker", "Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker\Unidas.MS.Maintenance.CheckinCheckout.ConsumerWorker.csproj", "{F7975862-6ECB-42CE-9F3D-2D4DE195626E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{91D584EB-2CA5-4DDA-A670-F7CA8D7E9614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91D584EB-2CA5-4DDA-A670-F7CA8D7E9614}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91D584EB-2CA5-4DDA-A670-F7CA8D7E9614}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91D584EB-2CA5-4DDA-A670-F7CA8D7E9614}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE14A1AC-8D85-426D-954F-9E928A93840A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE14A1AC-8D85-426D-954F-9E928A93840A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE14A1AC-8D85-426D-954F-9E928A93840A}.Release|Any CPU.ActiveCfg = Release|Any CPU

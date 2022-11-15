@@ -1,6 +1,7 @@
 ﻿using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
+using System.Threading.Tasks;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Interfaces.Services.UseCases;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Services;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Tests.Data;
@@ -25,7 +26,7 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Tests.Services
         }
 
         [Fact]
-        public async void ShouldIntegrateRequest()
+        public async Task ShouldIntegrateRequest()
         {
             var service = new CheckinCheckoutService(MockSendToAxUseCase(true).Object, MockLogger().Object);
 
@@ -36,7 +37,7 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Tests.Services
         }
 
         [Fact]
-        public async void ShouldntIntegrateRequest()
+        public async Task ShouldntIntegrateRequest()
         {
             var service = new CheckinCheckoutService(MockSendToAxUseCase(false).Object, MockLogger().Object);
 

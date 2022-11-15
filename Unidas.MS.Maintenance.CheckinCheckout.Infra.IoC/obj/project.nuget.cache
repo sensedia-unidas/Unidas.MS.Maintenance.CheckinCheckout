@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "35tRvFoL3A46aOqnLpWj4TdOq7emNCHLkZmlf0H03lX1/E2ZFZx3+Nw4vnkK2a2byW2eAn3OdKnckrd7/nyHTw==",
+  "dgSpecHash": "R8S2W11WNhnSE/sSsUVLMqkFTBKQehG0AjpHu1WSqe4Fk/Nqe7yVPP7e7paGprS/JcF1KvCT2Dc3MlRNuz+1WQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.2\\microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
+    "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.10\\microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Unidas.MS.Maintenance.CheckinCheckout.Application\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj" />
+    <ProjectReference Include="..\Unidas.MS.Maintenance.CheckinCheckout.Infra\Unidas.MS.Maintenance.CheckinCheckout.Infra.csproj" />
   </ItemGroup>
 
 </Project>

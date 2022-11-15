@@ -853,10 +853,24 @@
           "Unidas.MS.Maintenance.CheckinCheckout.Application.dll": {}
         }
       },
+      "Unidas.MS.Maintenance.CheckinCheckout.Infra/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "System.ServiceModel.NetTcp": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0",
+          "System.ServiceModel.Security": "4.10.0",
+          "Unidas.MS.Maintenance.CheckinCheckout.Application": "1.0.0"
+        },
+        "runtime": {
+          "Unidas.MS.Maintenance.CheckinCheckout.Infra.dll": {}
+        }
+      },
       "Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Unidas.MS.Maintenance.CheckinCheckout.Application": "1.0.0"
+          "Unidas.MS.Maintenance.CheckinCheckout.Application": "1.0.0",
+          "Unidas.MS.Maintenance.CheckinCheckout.Infra": "1.0.0"
         },
         "runtime": {
           "Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.dll": {}
@@ -1361,6 +1375,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "Unidas.MS.Maintenance.CheckinCheckout.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unidas.MS.Maintenance.CheckinCheckout.Infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

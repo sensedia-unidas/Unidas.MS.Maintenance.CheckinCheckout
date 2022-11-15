@@ -6,6 +6,8 @@ using Unidas.MS.Maintenance.CheckinCheckout.Application.Services;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Services.UseCases;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Validation;
 using Microsoft.Extensions.DependencyInjection;
+using Unidas.MS.Maintenance.CheckinCheckout.Infra.Interfaces;
+using Unidas.MS.Maintenance.CheckinCheckout.Infra.Services;
 
 namespace Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC
 {
@@ -14,7 +16,9 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC
         public static void RegisterServices(IServiceCollection services)
         {
             //REPOSITORY
-            
+
+            //INTEGRATION
+            services.AddScoped<IAxIntegrationService, AxIntegrationService>();            
 
             //SERVICE
             services.AddScoped<ICheckinCheckoutService, CheckinCheckoutService>();
