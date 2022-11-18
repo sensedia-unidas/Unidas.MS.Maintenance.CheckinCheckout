@@ -23,7 +23,7 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services.UseCases
             _appSettings = appSettings;
             _logger = logger;
             _mapper = mapper;
-        }
+        }        
 
         public async Task<bool> Execute(ItemCheckinCheckoutRequestViewModel item)
         {
@@ -34,28 +34,80 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services.UseCases
                 ServicePointManager.Expect100Continue = true;
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
-                var endpoint = new EndpointAddress(new Uri(_appSettings.AXConnectorSettings.MaintenanceUrl), new UpnEndpointIdentity(_appSettings.AXConnectorSettings.UserPrincipalName));
+                var axViewModelRequest = CreateWorkshopCheckObject(item);                
 
-                var client = new CaseManagementServices.CaseManagementServiceClient(new NetTcpBinding(), endpoint);
+                var client = CreateClient();
 
-                var axViewModelRequest = _mapper.Map<CaseManagementServices.WorkshopCheck>(item);
-
-                client.ClientCredentials.Windows.ClientCredential.Domain = _appSettings.AXConnectorSettings.Domain;
-                client.ClientCredentials.Windows.ClientCredential.UserName = _appSettings.AXConnectorSettings.UserDomain;
-                client.ClientCredentials.Windows.ClientCredential.Password = _appSettings.AXConnectorSettings.Password;
-
-                var result = await client.createWorkshopCheckAsync(null, axViewModelRequest).ConfigureAwait(false);
-
-                _logger.LogInformation("Finalizando envio para o AX", item);
-                _logger.LogInformation("Resposta do AX: {0}", result.ToString());
+                if (client.InnerChannel.State != System.ServiceModel.CommunicationState.Faulted)
+                {
+                    var result = await client.createWorkshopCheckAsync(null, axViewModelRequest).ConfigureAwait(false);
+                    _logger.LogInformation("Finalizando envio para o AX, resultado {0}", result.ToString());
+                }
+                else
+                {
+                    await Execute(item);
+                }                
 
                 return true;
             }
             catch (Exception ex)
             {
                 _logger.LogError("Erro ao tentar envio para o AX - {0}", ex.Message.ToString());
-                throw;
+                return false;
             }
         }
+
+        private CaseManagementServices.CaseManagementServiceClient CreateClient()
+        {
+            var endpoint = new EndpointAddress(new Uri(_appSettings.AXConnectorSettings.MaintenanceUrl), new UpnEndpointIdentity(_appSettings.AXConnectorSettings.UserPrincipalName));
+
+            var client = new CaseManagementServices.CaseManagementServiceClient(new NetTcpBinding(), endpoint);            
+
+            client.ClientCredentials.Windows.ClientCredential.Domain = _appSettings.AXConnectorSettings.Domain;
+            client.ClientCredentials.Windows.ClientCredential.UserName = _appSettings.AXConnectorSettings.UserDomain;
+            client.ClientCredentials.Windows.ClientCredential.Password = _appSettings.AXConnectorSettings.Password;
+
+            return client;
+        }
+
+        private string FormatDocument(string document)
+        {
+            if (!string.IsNullOrEmpty(document))
+            {
+                document = document.Replace(".", "");
+                document.Insert(document.Length - 2, "-");
+            }
+
+            return document;
+        }
+
+        public CaseManagementServices.WorkshopCheck CreateWorkshopCheckObject(ItemCheckinCheckoutRequestViewModel item)
+        {
+            var axViewModelRequest = new CaseManagementServices.WorkshopCheck()
+            {
+                CheckOrigin = (CaseManagementServices.AMRentDeviceCheckOrigin)item.CheckOrigin,
+                DriverId = FormatDocument(item.Document),
+                IntegrationRefId = item.IntegrationRefId,
+                RegistrationNumber = item.RegistrationNumber,
+                WorkshopCheckDate = item.WorkshopCheckDate,
+                WorkshopCheckType = (CaseManagementServices.WorkshopCheckType)item.WorkshopCheckType,
+                WorkshopCustomerConfirmation = item.WorkshopCustomerConfirmation ? CaseManagementServices.NoYes.Yes : CaseManagementServices.NoYes.No,
+                WorkshopObservation = item.WorkshopObservation,
+                WorkshopServiceCompleted = item.WorkshopServiceCompleted ? CaseManagementServices.NoYes.Yes : CaseManagementServices.NoYes.No,
+                WorkshopServiceReason = item.WorkshopServiceReason
+            };
+
+            return axViewModelRequest;
+        }
+
+        //public static EndpointAddress CreateEndpoint(string uriString, EndpointIdentity endpointIdentity)
+        //{
+        //    return new EndpointAddress(new Uri(uriString), endpointIdentity);
+        //}
+
+        //public static EndpointIdentity CreateUpnIdentity(string upnName)
+        //{
+        //    return new UpnEndpointIdentity(upnName);
+        //}
     }
 }

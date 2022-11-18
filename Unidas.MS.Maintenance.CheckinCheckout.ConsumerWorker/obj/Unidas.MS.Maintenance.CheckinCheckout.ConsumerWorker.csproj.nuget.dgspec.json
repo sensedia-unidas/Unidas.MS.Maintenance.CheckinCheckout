@@ -142,6 +142,10 @@
               "target": "Package",
               "version": "[2.21.0, )"
             },
+            "Microsoft.ApplicationInsights.WindowsServer": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
             "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel": {
               "target": "Package",
               "version": "[2.21.0, )"
@@ -165,6 +169,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.14.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
