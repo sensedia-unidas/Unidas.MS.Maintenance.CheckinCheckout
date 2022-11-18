@@ -1751,6 +1751,9 @@
           "lib/net6.0/System.ServiceModel.Security.dll": {}
         }
       },
+      "System.ServiceModel.Web/1.0.0": {
+        "type": "package"
+      },
       "System.Text.Encoding/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1991,7 +1994,8 @@
           "Newtonsoft.Json": "13.0.1",
           "System.ServiceModel.NetTcp": "4.10.0",
           "System.ServiceModel.Primitives": "4.10.0",
-          "System.ServiceModel.Security": "4.10.0"
+          "System.ServiceModel.Security": "4.10.0",
+          "System.ServiceModel.Web": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Unidas.MS.Maintenance.CheckinCheckout.Application.dll": {}
@@ -6322,6 +6326,19 @@
         "ref/xamarinwatchos10/_._",
         "system.servicemodel.security.4.10.0.nupkg.sha512",
         "system.servicemodel.security.nuspec"
+      ]
+    },
+    "System.ServiceModel.Web/1.0.0": {
+      "sha512": "8RbqIHCWiFyuOiMksjDOJ32dFWrmu/Ma2l7yF+Xx6eY3L95Si260WlIAmtY1GZ5bgyg9tDC1R83lhLT4gKMbEw==",
+      "type": "package",
+      "path": "system.servicemodel.web/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.exe",
+        "System.ServiceModel.Web.dll",
+        "system.servicemodel.web.1.0.0.nupkg.sha512",
+        "system.servicemodel.web.nuspec"
       ]
     },
     "System.Text.Encoding/4.3.0": {

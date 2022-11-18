@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VNa/SiXWarSqgrf218WM0rp4RM+Ogexg75gYS6wGO4Rth5mh35sX7cj5CBH+U1Yzb0Fipvq65GY0aUcRk/dPCQ==",
+  "dgSpecHash": "/DLCH0YGBuGSWofK3gecSwIdmtQlblxkB4N28uks+vf3TljO0/vTLS6b3PLRTUIJqsfArrAqYulR8XR7rN4hJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Application\\Unidas.MS.Maintenance.CheckinCheckout.Application.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.nettcp\\4.10.0\\system.servicemodel.nettcp.4.10.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.primitives\\4.10.0\\system.servicemodel.primitives.4.10.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.security\\4.10.0\\system.servicemodel.security.4.10.0.nupkg.sha512",
+    "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.web\\1.0.0\\system.servicemodel.web.1.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": []

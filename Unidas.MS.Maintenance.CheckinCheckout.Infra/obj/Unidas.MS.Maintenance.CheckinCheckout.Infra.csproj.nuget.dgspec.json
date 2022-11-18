@@ -70,6 +70,10 @@
             "System.ServiceModel.Security": {
               "target": "Package",
               "version": "[4.10.0, )"
+            },
+            "System.ServiceModel.Web": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

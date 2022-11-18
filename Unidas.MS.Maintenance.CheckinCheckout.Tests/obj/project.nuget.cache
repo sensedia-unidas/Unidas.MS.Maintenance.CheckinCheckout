@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9w1ZXRyvLEGz4p/AazY2zxO2oNLJ9nrKLuau25JFXFofOaqPW2CXb3I/DXxl/j4MUzLbtvXMMUHtc8MVSnAmxw==",
+  "dgSpecHash": "sMmTuMcEJHCwK21cXXUnvHUsGbTNM0e4Dtxqo3TDEr2b9x9h6lM4w5x37l8X1Ok8jjsSmkQKpiyqCISOYWViUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\SergioBonani\\Documents\\Projetos\\Unidas-OV\\Unidas.MS.Maintenance.CheckinCheckout\\Unidas.MS.Maintenance.CheckinCheckout.Tests\\Unidas.MS.Maintenance.CheckinCheckout.Application.Tests.csproj",
   "expectedPackageFiles": [
@@ -102,6 +102,7 @@
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.nettcp\\4.10.0\\system.servicemodel.nettcp.4.10.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.primitives\\4.10.0\\system.servicemodel.primitives.4.10.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.security\\4.10.0\\system.servicemodel.security.4.10.0.nupkg.sha512",
+    "C:\\Users\\SergioBonani\\.nuget\\packages\\system.servicemodel.web\\1.0.0\\system.servicemodel.web.1.0.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\SergioBonani\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",

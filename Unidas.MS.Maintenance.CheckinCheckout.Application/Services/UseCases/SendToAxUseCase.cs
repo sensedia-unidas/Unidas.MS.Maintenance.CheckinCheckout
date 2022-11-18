@@ -7,6 +7,7 @@ using System.Net;
 using System.Text;
 using System.ServiceModel;
 using AutoMapper;
+using System.ServiceModel.Description;
 
 namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services.UseCases
 {
@@ -27,35 +28,29 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services.UseCases
 
         public async Task<bool> Execute(ItemCheckinCheckoutRequestViewModel item)
         {
+            _logger.LogInformation("Iniciando envio para o AX", item);
+
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
+            var axViewModelRequest = CreateWorkshopCheckObject(item);
+
+            var client = CreateClient();
+            
             try
-            {
-                _logger.LogInformation("Iniciando envio para o AX", item);
-
-                ServicePointManager.Expect100Continue = true;
-                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-
-                var axViewModelRequest = CreateWorkshopCheckObject(item);                
-
-                var client = CreateClient();
-
-                if (client.InnerChannel.State != System.ServiceModel.CommunicationState.Faulted)
-                {
-                    var result = await client.createWorkshopCheckAsync(null, axViewModelRequest).ConfigureAwait(false);
-                    _logger.LogInformation("Finalizando envio para o AX, resultado {0}", result.ToString());
-                }
-                else
-                {
-                    await Execute(item);
-                }                
-
+            {                
+                var result = await client.createWorkshopCheckAsync(null, axViewModelRequest).ConfigureAwait(false);
+                _logger.LogInformation("Finalizando envio para o AX, resultado {0}", result.ToString());
                 return true;
             }
             catch (Exception ex)
             {
+                client.Abort();
                 _logger.LogError("Erro ao tentar envio para o AX - {0}", ex.Message.ToString());
                 return false;
             }
-        }
+            
+        }               
 
         private CaseManagementServices.CaseManagementServiceClient CreateClient()
         {
