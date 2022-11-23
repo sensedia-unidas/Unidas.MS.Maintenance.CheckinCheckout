@@ -1,14 +1,3 @@
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.deps.json
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.dll
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\bin\Debug\net6.0\ref\Unidas.MS.Maintenance.CheckinCheckout.Domain.dll
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.pdb
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.AssemblyInfoInputs.cache
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.AssemblyInfo.cs
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.csproj.CoreCompileInputs.cache
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.dll
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\obj\Debug\net6.0\ref\Unidas.MS.Maintenance.CheckinCheckout.Domain.dll
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\MaintenanceCheckinCheckout.Domain\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.pdb
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Domain\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.deps.json
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Domain\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Domain.dll
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Domain\bin\Debug\net6.0\ref\Unidas.MS.Maintenance.CheckinCheckout.Domain.dll

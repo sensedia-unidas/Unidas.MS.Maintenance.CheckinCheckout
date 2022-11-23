@@ -3,7 +3,9 @@ C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.Checkin
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\ref\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.dll
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.pdb
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Application.dll
+C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.dll
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Application.pdb
+C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.pdb
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.csproj.AssemblyReference.cache
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.AssemblyInfoInputs.cache
@@ -13,5 +15,3 @@ C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.Checkin
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.dll
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\obj\Debug\net6.0\ref\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.dll
 C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\obj\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC.pdb
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.dll
-C:\Users\SergioBonani\Documents\Projetos\Unidas-OV\Unidas.MS.Maintenance.CheckinCheckout\Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC\bin\Debug\net6.0\Unidas.MS.Maintenance.CheckinCheckout.Infra.pdb

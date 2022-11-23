@@ -1,36 +1,31 @@
-﻿using FluentValidation.Results;
+﻿using Microsoft.Extensions.Logging;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.Interfaces.Services;
-using Unidas.MS.Maintenance.CheckinCheckout.Application.Interfaces.Services.UseCases;
+using Unidas.MS.Maintenance.CheckinCheckout.Application.ViewModels;
 using Unidas.MS.Maintenance.CheckinCheckout.Application.ViewModels.Requests;
-using Microsoft.Extensions.Logging;
+using Unidas.MS.Maintenance.CheckinCheckout.Infra.Interfaces;
 
 namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Services
 {
     public class CheckinCheckoutService : ICheckinCheckoutService
     {
-        private readonly ISendToAxUseCase _useCase;
+        private readonly IQueueConnectorApdater _queueConnectorAdapter;
         private readonly ILogger<CheckinCheckoutService> _logger;
-        public CheckinCheckoutService(ISendToAxUseCase sendToAxUseCase,
-            ILogger<CheckinCheckoutService> logger)
+        private readonly AppSettings _appSettings;
+        public CheckinCheckoutService(AppSettings appSettings,
+            ILogger<CheckinCheckoutService> logger,
+            IQueueConnectorApdater queueConnectorAdapter)
         {
-            _useCase = sendToAxUseCase;
+            _queueConnectorAdapter = queueConnectorAdapter;
             _logger = logger;
+            _appSettings = appSettings;
         }
-        public async Task<ValidationResult> Integrate(ItemCheckinCheckoutRequestViewModel request)
+        public async Task Integrate(ItemCheckinCheckoutRequestViewModel request)
         {
             _logger.LogInformation("Iniciando integração", request);
 
-            var validation = new ValidationResult();
-
-            if (!await _useCase.Execute(request))
-            {
-                _logger.LogInformation("Integração não realizada", request);
-                validation.Errors.Add(new ValidationFailure(String.Empty, "Integração não realizada"));
-            }
+            await _queueConnectorAdapter.SendMessage(_appSettings.ServiceBusSettings.PrimaryConnectionString, _appSettings.ServiceBusSettings.QueueName, request);            
 
             _logger.LogInformation("Finalizando integração", request);
-
-            return validation;
         }
     }
 }

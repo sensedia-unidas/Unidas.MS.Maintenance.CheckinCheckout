@@ -5,6 +5,6 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Application.Interfaces.Services
 {
     public interface ICheckinCheckoutService
     {
-        Task<ValidationResult> Integrate(ItemCheckinCheckoutRequestViewModel request);
+        Task Integrate(ItemCheckinCheckoutRequestViewModel request);
     }
 }

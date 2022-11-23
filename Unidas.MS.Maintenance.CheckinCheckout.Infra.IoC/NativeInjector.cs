@@ -17,8 +17,8 @@ namespace Unidas.MS.Maintenance.CheckinCheckout.Infra.IoC
         {
             //REPOSITORY
 
-            //INTEGRATION
-            services.AddScoped<IAxIntegrationService, AxIntegrationService>();            
+            //ADAPTER
+            services.AddScoped<IQueueConnectorApdater, QueueConnectorApdater>();            
 
             //SERVICE
             services.AddScoped<ICheckinCheckoutService, CheckinCheckoutService>();
